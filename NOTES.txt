@@ -3,7 +3,7 @@ Notes:
 	02) You should initiate Node using: (npm --init)
 	03) You should install lite-server and add a script in the package.json: ("start": "lite-server")
 	04) You should initiate tsc as well: (tsc --init)
-	05) Run tsc to somple typescript files to js files
+	05) Run tsc to compile typescript files to js files
 	06) You can enable ("strictNullChecks": true) to check for null variables in the tsconfig file
 	07) You can enable ("noEmitOnError": true) to stop the creation of the .js version if there are any errors
 	08) You can enable ("noImplicitAny": true) tpp stop the compiler for assigning type any to undefined variables
