@@ -1,0 +1,22 @@
+{
+  "name": "typescript-demo",
+  "version": "1.0.0",
+  "description": "TypeScript Demo",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "lite-server"
+  },
+  "author": "Houmam Hatahet",
+  "license": "MIT",
+  "devDependencies": {
+    "@types/jquery": "^3.3.5",
+    "lite-server": "^2.4.0"
+  },
+  "dependencies": {
+    "jquery": "^3.3.1",
+    "systemjs": "^0.21.4",
+    "ts-loader": "^4.4.2",
+    "webpack": "^4.16.5"
+  }
+}

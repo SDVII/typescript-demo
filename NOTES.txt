@@ -1,0 +1,20 @@
+Notes:
+	01) Install TS globally.
+	02) You should initiate Node using: (npm --init)
+	03) You should install lite-server and add a script in the package.json: ("start": "lite-server")
+	04) You should initiate tsc as well: (tsc --init)
+	05) Run tsc to somple typescript files to js files
+	06) You can enable ("strictNullChecks": true) to check for null variables in the tsconfig file
+	07) You can enable ("noEmitOnError": true) to stop the creation of the .js version if there are any errors
+	08) You can enable ("noImplicitAny": true) tpp stop the compiler for assigning type any to undefined variables
+	09) (tsc --outFile app.js file1.ts file2.ts ..) creates a single js file with all the given .ts files
+	10) If you imported namespaces in the .ts files, (tsc --outFile app.js) would be enough
+	11) You'll need to install a module loader like SystemJs in order to import modules
+		I) (baseURL:"/") : to specify the project's root folder.
+      		II) (packages: {'/':{defaultExtension: 'js'}}): so that the output would be a .js file
+     		III) ( map:{"jQuery":"node_modules/jquery/dist/jquery.min.js"}): to map node_modules in order to access them
+	12) (tsc -w) watches for changes automatically
+	13) In order to import libraries, use import statement then do one of the following:
+		I) Add definition files: You can look up ts converted libraries' definitions in (http://definitelytyped.org/)
+       		II) Run (npm install --save-dev @types/jquery)
+	14) You can ("exclude": ["node_modules"]) to tsconfig.json in order to skip compiling node modules
